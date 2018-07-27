@@ -25,7 +25,7 @@ A Babel plugin which wraps the body of async functions in a try/catch block
 ## USAGE
 
 ```
-$ babel --plugins async-try-catch script.js
+$ babel --plugins wrap-functions-in-try-catch script.js
 ```
 
 ## SYNOPSIS
@@ -43,7 +43,7 @@ async function printFile (filename) {
 }
 ```
 
-`$ babel --plugins async-try-catch --whitelist es7.asyncFunctions before.js`
+`$ babel --plugins wrap-functions-in-try-catch --whitelist es7.asyncFunctions before.js`
 
 ```javascript
 function asyncError (error) {
