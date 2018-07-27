@@ -7,10 +7,10 @@ export default function ({ Plugin, types: t }) {
         return body && body.length === 1 && t.isTryStatement(body[0]);
     }
 
-    return new Plugin('async-try-catch', {
+    return new Plugin('wrap-functions-in-try-catch', {
         visitor: {
             Function (node) {
-                if (node.async && !alreadyWrapped(node)) {
+                if (!alreadyWrapped(node)) {
                     node.body = wrap(node.body);
                 }
             }

@@ -1,6 +1,6 @@
 **NOTICE:** _This plugin is deprecated and is no longer needed since the bug it works around has been [fixed in regenerator](https://github.com/facebook/regenerator/issues/175)._
 
-# babel-plugin-async-try-catch
+# babel-plugin-wrap-functions-in-try-catch
 
 [![npm status](http://img.shields.io/npm/v/babel-plugin-async-try-catch.svg)](https://www.npmjs.org/package/babel-plugin-async-try-catch)
 [![build status](https://secure.travis-ci.org/chocolateboy/babel-plugin-async-try-catch.svg)](http://travis-ci.org/chocolateboy/babel-plugin-async-try-catch)
