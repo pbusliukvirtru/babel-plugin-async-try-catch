@@ -33,5 +33,4 @@ npm-debug.log
 
 dev/
 dist/
-target/
 temp.*
