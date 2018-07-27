@@ -13,11 +13,11 @@
     "target/src/wrap.js"
   ],
   "dependencies": {
-    "babel-runtime": "^5.8.25",
+    "babel-runtime": "^6.23.0",
     "source-map-support": "^0.3.2"
   },
   "devDependencies": {
-    "babel-core": "^5.8.24",
+    "babel-core": "^6.26.0",
     "babel-plugin-espower": "^1.0.0",
     "espurify": "^1.3.0",
     "grunt": "^0.4.5",
