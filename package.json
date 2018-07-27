@@ -18,6 +18,10 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-react": "^6.0.0",
+    "babel-preset-stage-2": "^6.0.0",
+    "babel-preset-stage-0": "^6.0.0",
     "babel-plugin-espower": "^1.0.0",
     "espurify": "^1.3.0",
     "grunt": "^0.4.5",

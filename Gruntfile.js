@@ -9,7 +9,7 @@ module.exports = function (grunt) {
                 sourceMaps: 'inline',
                 nonStandard: false,
                 optional: [ 'runtime', 'strict' ],
-                stage: 0,
+                presets: ['es2015', 'stage-0']
             },
             src: {
                 expand: true,
@@ -18,7 +18,9 @@ module.exports = function (grunt) {
             },
             test: {
                 options: {
-                    plugins: [ 'babel-plugin-espower' ],
+                    plugins: [
+                        'babel-plugin-espower'
+                    ],
                 },
                 expand: true,
                 src: 'test/src/**/*.js',
