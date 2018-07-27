@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
 
@@ -7,21 +5,20 @@ module.exports = function (grunt) {
         babel: {
             options: {
                 sourceMaps: 'inline',
-                nonStandard: false,
-                optional: [ 'runtime', 'strict' ],
-                presets: ['es2015', 'stage-0']
+                presets: [ 'es2015', 'es2016', 'es2017', 'stage-0'],
+                plugins: [ 'transform-strict-mode', 'transform-runtime' ]
             },
             src: {
                 expand: true,
                 src: 'src/**/*.js',
-                dest: 'target',
+                dest: 'target'
             },
             test: {
-                options: {
-                    plugins: [
-                        'babel-plugin-espower'
-                    ],
-                },
+                // options: {
+                //     plugins: [
+                //         'babel-plugin-espower'
+                //     ],
+                // },
                 expand: true,
                 src: 'test/src/**/*.js',
                 dest: 'target',
