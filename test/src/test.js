@@ -1,8 +1,7 @@
 import 'source-map-support/register';
 import _                     from 'lodash';
 import assert                from 'power-assert';
-// TODO: Fix tests
-import { BUILDER_KEYS }      from 'babel-core/lib/transformation/';
+import { BUILDER_KEYS }      from 'babel-types';
 import cloneWithWhitelist    from 'espurify/lib/clone-ast.js';
 import Fs                    from 'fs';
 import Path                  from 'path';
